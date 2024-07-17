@@ -4,7 +4,7 @@
 Este proyecto consistió en diseñar una página web, conteniendo aspectos de mis proyectos e información personal en un portafolio. El objetivo principal fue mejorar la experiencia del usuario al navegar en mis conocimientos, destrezas y aptitudes.
 
 **Tecnologías Utilizadas:**
-- **Lenguajes de programación:** JavaScript, Python, etc.
+- **Lenguajes de programación:** HTML y CSS, JavaScript.
 - **Herramientas y frameworks:** React.
 
 ## Comenzando 🚀
@@ -42,15 +42,6 @@ cd nombre-del-repositorio
 ```
 
 
-## Despliegue 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
-
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
-
 ## Autores ✒️
 
 * **Jonathan Fernandez** - [Jonathand77](https://github.com/Jonathand77)
@@ -58,7 +49,7 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+Este proyecto está bajo la Licencia (MIT LICENSE) - mira el archivo [LICENSE](LICENSE) para detalles
 
 ## Expresiones de Gratitud 🎁
 
