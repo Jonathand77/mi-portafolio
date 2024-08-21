@@ -4,7 +4,8 @@
 This project consisted of designing a web page, containing aspects of my projects and personal information in a portfolio. The main objective was to improve the user experience when browsing my knowledge, skills and abilities.
 
 **Technologies Used:** 
-- **Programming languages:** HTML<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> CSS <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css 3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> JavaScript <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
+- **Programming languages:** HTML<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> CSS<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
+ JavaScript <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
 - **Tools and frameworks:** React <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>
 
 ## Getting Started 🚀
