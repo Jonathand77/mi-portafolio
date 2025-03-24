@@ -34,7 +34,7 @@ html{
     align-items: center;
 }
 .logo img.logo-image {
-    width: 90px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    width: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
     height: auto;
     margin-right: 10px; /* Espacio entre la imagen y el texto */
 }
