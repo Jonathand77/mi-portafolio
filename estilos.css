@@ -291,40 +291,40 @@ html{
     font-size: 14px;
 }
 /* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .javascript{
+.skills .skill .softwareDevelopment{
     width: 0%;
-    animation: 2s javascript forwards;
+    animation: 2s softwareDevelopment forwards;
 }
-@keyframes javascript {
+@keyframes softwareDevelopment {
     0%{width: 0%;}
     100%{width: 75%;}
 }
 
-.skills .skill .htmlcss{
+.skills .skill .webDevelopment{
     width: 0%;
-    animation: 2s htmlcss forwards;
+    animation: 2s webDevelopment forwards;
 }
-@keyframes htmlcss {
+@keyframes webDevelopment {
     0%{width: 0%;}
     100%{width: 90%;}
 }
 
-.skills .skill .java{
+.skills .skill .scrum{
     width: 0%;
-    animation: 2s java forwards;
+    animation: 2s scrum forwards;
 }
-@keyframes java {
+@keyframes scrum {
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 80%;}
 }
 
-.skills .skill .python{
+.skills .skill .devOps{
     width: 0%;
-    animation: 2s python forwards;
+    animation: 2s devOps forwards;
 }
-@keyframes python {
+@keyframes devOps {
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 60%;}
 }
 
 .skills .skill .git{
