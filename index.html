@@ -1,447 +1,665 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=chrome"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Portafolio</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="icon" href="img/LogoJonathan.png" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="icon" href="img/LogoJonathan.png" type="image/x-icon" />
+  </head>
+  <body>
     <!-- MENÚ ENCABEZADO -->
-     <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#"> 
-                    <img src="img/LogoJonathan.png" alt="Logo" class="logo-image">
-                    Jonathan Fernandez 
-                </a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#inicio" onclick="seleccionar()"> Inicio </a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()"> Sobre Mi </a></li>
-                    <li><a href="#skills" onclick="seleccionar()"> Skills </a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()"> Curriculum </a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()"> Portafolio </a></li>
-                </ul>
-            </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
-     </div>
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">
+            <img src="img/LogoJonathan.png" alt="Logo" class="logo-image" />
+            Jonathan Fernandez
+          </a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()"> Inicio </a></li>
+            <li><a href="#sobremi" onclick="seleccionar()"> Sobre Mi </a></li>
+            <li><a href="#skills" onclick="seleccionar()"> Skills </a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()"> Curriculum </a>
+            </li>
+            <li>
+              <a href="#portfolio" onclick="seleccionar()"> Portafolio </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
 
     <!-- SECCION INICIO -->
     <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="img/Foto.jpg" alt="">
-            </div>
-            <h1>JONATHAN FERNANDEZ</h1>
-            <h2>Estudiante Ingeniaría de sistemas | Universidad de Antioquia</h2>
-            <div class="redes">
-                <a href="https://www.facebook.com/profile.php?id=100003792250786&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/jonathandvid77?igsh=eGp6N2F4dTZnMDlu" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="in/jonathan-david-fernandez-vargas-800b04279" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-            </div>
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/Foto.jpg" alt="" />
         </div>
+        <h1>JONATHAN FERNANDEZ</h1>
+        <h2>Ingeniero de sistemas | Universidad de Antioquia</h2>
+        <div class="redes">
+          <a
+            href="https://www.facebook.com/profile.php?id=100003792250786&mibextid=ZbWKwL"
+            target="_blank"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/jonathandvid77?igsh=eGp6N2F4dTZnMDlu"
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/jonathan-david-fernandez-vargas-800b04279/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
     </section>
 
     <!-- SECCION SOBRE MI -->
     <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
-            <p><span>Hola, soy Jonathan David Fernandez.</span> Soy una persona apasionada por el aprendizaje continuo y la resolución creativa de problemas. Mi experiencia abarca diversos campos, desde la programación y la investigación hasta la atención al cliente y la consultoría. Me destaco por mi habilidad para comunicarme de manera clara y efectiva, así como por mi capacidad para adaptarme rápidamente a nuevos entornos y desafíos. Disfruto trabajando en equipo, colaborando para alcanzar objetivos comunes y aportando ideas innovadoras. Mi enfoque proactivo y mi dedicación me han permitido desarrollar habilidades sólidas en múltiples áreas, como lo son el desarrollo web y desarrollo de software, siempre buscando superar expectativas y generar un impacto positivo en cualquier proyecto en el que participe.</p>
-            <div class="fila">
-                <!-- datos personales -->
-                <div class="col">
-                    <h3>Datos Personales</h3>
-                    <ul>
-                        <li>
-                            <strong>Cumpleaños</strong>
-                            05-04-2001
-                        </li>
-                        <li>
-                            <strong>Teléfono</strong>
-                            (+57) 310 424 8655
-                        </li>
-                        <li>
-                            <strong>Email</strong>
-                            jonathanfdez62@gmail.com
-                        </li>
-                        <li>
-                            <strong>Website</strong>
-                            <a href="https://jonathand77.github.io/mi-portafolio/">
-                                https://jonathand77.github.io/mi-portafolio/
-                            </a>
-                        </li>
-                        <li>
-                            <strong>Dirección</strong>
-                            Bello, Antioquia
-                        </li>
-                        <li>
-                            <strong>Cargo</strong>
-                            <span>Junior | Web Developer | Software Developer</span>
-                        </li>
-                    </ul>
-                </div>
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p>
+          <span>Hola, soy Jonathan David Fernandez.</span> Soy una persona
+          apasionada por el aprendizaje continuo y la resolución creativa de
+          problemas. Mi experiencia abarca diversos campos, desde la
+          programación y la investigación hasta la atención al cliente y la
+          consultoría. Me destaco por mi habilidad para comunicarme de manera
+          clara y efectiva, así como por mi capacidad para adaptarme rápidamente
+          a nuevos entornos y desafíos. Disfruto trabajando en equipo,
+          colaborando para alcanzar objetivos comunes y aportando ideas
+          innovadoras. Mi enfoque proactivo y mi dedicación me han permitido
+          desarrollar habilidades sólidas en múltiples áreas, como lo son el
+          desarrollo web y desarrollo de software, siempre buscando superar
+          expectativas y generar un impacto positivo en cualquier proyecto en el
+          que participe.
+        </p>
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                05-04-2001
+              </li>
+              <li>
+                <strong>Teléfono</strong>
+                (+57) 310 424 8655
+              </li>
+              <li>
+                <strong>Email</strong>
+                jonathanfdez62@gmail.com
+              </li>
+              <li>
+                <strong>Website</strong>
+                <a href="https://jonathand77.github.io/mi-portafolio/">
+                  https://jonathand77.github.io/mi-portafolio/
+                </a>
+              </li>
+              <li>
+                <strong>Dirección</strong>
+                Bello, Antioquia
+              </li>
+              <li>
+                <strong>Cargo</strong>
+                <span>Junior | Web Developer | Software Developer</span>
+              </li>
+            </ul>
+          </div>
 
-                <!-- intereses -->
-                <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="contenedor-intereses">
-                        <div class="interes">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>JUEGOS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-film"></i>
-                            <span>PELICULAS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-car"></i>
-                            <span>VIAJAR</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-futbol"></i>
-                            <span>DEPORTE</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-wand-magic-sparkles"></i>
-                            <span>COLECCIONISMO</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-camera"></i>
-                            <span>FOTOS</span>
-                        </div>
-                        
-                    </div>
-                </div>
+          <!-- intereses -->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-film"></i>
+                <span>PELICULAS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-car"></i>
+                <span>VIAJAR</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-futbol"></i>
+                <span>DEPORTE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <span>COLECCIONISMO</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-camera"></i>
+                <span>FOTOS</span>
+              </div>
             </div>
-            <a href="https://drive.google.com/file/d/1GBcIIOBzmLu84jQ4JJYXTDbDEjKX3fB1/view?usp=sharing" download>
-                <button>
-                    Descargar CV <i class="fa-solid fa-download"></i>
-                    <span class="overlay"></span>
-                </button>
-            </a>
+          </div>
         </div>
+        <a
+          href="https://drive.google.com/file/d/1zl-ub0ec20rlQD31nYTTzKnd3ZLbqNBy/view?usp=sharing"
+          download
+        >
+          <button>
+            Descargar CV <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+          </button>
+        </a>
+      </div>
     </section>
 
     <!-- SECCION SKILLS -->
     <section class="skills" id="skills">
-        <div class="contenido-seccion">
-            <h2>Skills</h2>
-            <div class="fila">
-                <!-- Technical Skill -->
-                <div class="col">
-                    <h3>Technical Skills</h3>
-                    <div class="skill">
-                        <span>Software Development</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Web Development</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Scrum</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>DevOps</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>60%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Git</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>83%</span>
-                            </div>
-                        </div>
-                    </div>
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!-- Technical Skill -->
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>Software Development</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
                 </div>
-                <!-- Professional Skills -->
-                <div class="col">
-                    <h3>Professional Skills</h3>
-                    <div class="skill">
-                        <span>Comunicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Creatividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Dedicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>95%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Proyect Management</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>85%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+            <div class="skill">
+              <span>Web Development</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Scrum</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>DevOps</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Git</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>83%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Professional Skills -->
+          <div class="col">
+            <h3>Professional Skills</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Proyect Management</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- SECCION CURRICULUM -->
     <section id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2>Curriculum</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Educación</h3>
-                    <div class="item izq">
-                        <h4>Ingeniaría de Sistemas</h4>
-                        <span class="casa">Universidad de Antioquia</span>
-                        <span class="fecha">2019 - 2026</span>
-                        <p>Estudiante de Ingeniería de Sistemas en la Universidad de Antioquia, apasionado por el desarrollo de software, desarrolllo web y la innovación tecnológica.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Certificado Introducción a la programación</h4>
-                        <span class="casa">Open Bootcamp</span>
-                        <span class="fecha">2022 - 2022</span>
-                        <p>Certificado en Introducción a la Programación, con sólidos fundamentos en lógica de programación y habilidades prácticas en lenguajes como Python y Java.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Certificado HTML, CSS y JavaScript</h4>
-                        <span class="casa">Open Bootcamp</span>
-                        <span class="fecha">2022 - 2022</span>
-                        <p>Certificado en HTML, CSS y JavaScript, con conocimientos en diseño y desarrollo de páginas web responsivas y estilizadas; con habilidades en programación dinámica de front-end y creación de interfaces web interactivas.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Certificado Java</h4>
-                        <span class="casa">Open Bootcamp</span>
-                        <span class="fecha">2022 - 2023</span>
-                        <p>Certificado en Java, con competencias en desarrollo de aplicaciones robustas y orientadas a objetos.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Certificado Python</h4>
-                        <span class="casa">Open Bootcamp</span>
-                        <span class="fecha">2022 - 2023</span>
-                        <p>Certificado en Python, con experiencia en programación versátil y desarrollo de soluciones eficientes para diversos problemas.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Certificado Git</h4>
-                        <span class="casa">Open Bootcamp</span>
-                        <span class="fecha">2022 - 2023</span>
-                        <p>Certificado en Git, con habilidades en control de versiones y colaboración eficiente en proyectos de desarrollo de software.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Certificado Algoritmos para Big Data</h4>
-                        <span class="casa">IN2LAB research group, the Faculty of Engineering in Universidad de Antioquia</span>
-                        <span class="fecha">2023 - 2024</span>
-                        <p>Certificado que acredita la adquisición de conocimientos y habilidades en el diseño, análisis e implementación de algoritmos optimizados para el procesamiento y análisis de grandes volúmenes de datos.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Certificado Inteligencia Artificial para las Ingenierias y Ciencias</h4>
-                        <span class="casa">IN2LAB research group, the Faculty of Engineering in Universidad de Antioquia</span>
-                        <span class="fecha">2023 - 2024</span>
-                        <p>Certificado en una introducción completa y técnica a los métodos y técnicas para crear modelos descriptivos y predictivos a partir de datos.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Certificado CCNAv7: Introducción a Redes</h4>
-                        <span class="casa">Cisco Networking Academy</span>
-                        <span class="fecha">2024 - 2024</span>
-                        <p>Certificado en una acreditación que ha adquirido conocimientos fundamentales sobre redes de computadoras, incluyendo su diseño, configuración y mantenimiento. </p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Certificado CyberOps Associate</h4>
-                        <span class="casa">Cisco Networking Academy</span>
-                        <span class="fecha">2024 - 2024</span>
-                        <p>Certificado en una acreditación que ha adquirido conocimientos y habilidades fundamentales en ciberseguridad y operaciones de seguridad, con un enfoque en la detección, análisis y respuesta ante amenazas en entornos empresariales.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col derecha">
-                    <h3>Experiencia de trabajo</h3>
-                    <div class="item der">
-                        <h4>Auxiliar Administrativo</h4>
-                        <span class="casa">Universidad de Antioquia</span>
-                        <span class="fecha">2022 - 2024</span>
-                        <p>Profesional con experiencia en gestión administrativa y documental, organización de bases de datos y generación de reportes técnicos y administrativos. Encargado de la gestión de inventarios, adquisición y mantenimiento de equipos informáticos, así como la programación y control del uso de laboratorios. Brindé soporte y asistencia a estudiantes, docentes y personal, gestionando solicitudes y resolviendo incidencias técnicas básicas. Además, apoyé en mantenimiento preventivo y actualización de software, contribuyendo al correcto funcionamiento del laboratorio y cumplimiento de normas de seguridad.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Administrador de Sistemas</h4>
-                        <span class="casa">Universidad de Antioquia</span>
-                        <span class="fecha">2024 - Present Day</span>
-                        <p>Experiencia en el desarrollo y mantenimiento de software, apoyando la creación, prueba y depuración de aplicaciones para el laboratorio. Habilidades en la gestión y optimización de bases de datos, ejecución de consultas y generación de reportes. Brindé soporte técnico y asistencia a usuarios, orientando a estudiantes y docentes en la resolución de problemas de programación y uso de herramientas de desarrollo. Participé en pruebas de software y control de calidad, identificando errores y optimizando el código. Además, elaboré documentación técnica, manuales y guías, asegurando la correcta gestión y actualización de los sistemas.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Sistema Cotización de Viajes</h4>
-                        <span class="casa">Cootraespeciales</span>
-                        <span class="fecha">2024 - 2024</span>
-                        <p>Experiencia en un sistema web de cotización de transporte, en colaboración con la empresa colombiana de autobuses COOTRAESPECIALES. Diseñado para simplificar y automatizar el proceso de generación de estimaciones de costos de transporte. El sistema permite a los usuarios seleccionar los puntos de salida y regreso, especificar el número de pasajeros y elegir entre los vehículos disponibles. Calcula las cotizaciones con base en precios base predefinidos y la capacidad del vehículo, lo que hace que el proceso sea eficiente y fácil de usar.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                </div>
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>Ingeniaría de Sistemas</h4>
+              <span class="casa">Universidad de Antioquia</span>
+              <span class="fecha">2019 - 2026</span>
+              <p>
+                Titulado de Ingeniería de Sistemas en la Universidad de
+                Antioquia, apasionado por el desarrollo de software, desarrolllo
+                web y la innovación tecnológica.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
             </div>
+            <div class="item izq">
+              <h4>Certificado Introducción a la programación</h4>
+              <span class="casa">Open Bootcamp</span>
+              <span class="fecha">2022 - 2022</span>
+              <p>
+                Certificado en Introducción a la Programación, con sólidos
+                fundamentos en lógica de programación y habilidades prácticas en
+                lenguajes como Python y Java.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Certificado HTML, CSS y JavaScript</h4>
+              <span class="casa">Open Bootcamp</span>
+              <span class="fecha">2022 - 2022</span>
+              <p>
+                Certificado en HTML, CSS y JavaScript, con conocimientos en
+                diseño y desarrollo de páginas web responsivas y estilizadas;
+                con habilidades en programación dinámica de front-end y creación
+                de interfaces web interactivas.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Certificado Python</h4>
+              <span class="casa">Open Bootcamp</span>
+              <span class="fecha">2022 - 2023</span>
+              <p>
+                Certificado en Python, con experiencia en programación versátil
+                y desarrollo de soluciones eficientes para diversos problemas.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Certificado Voluntariado como Embajador Universitario</h4>
+              <span class="casa"
+                >Fundación Antivirus para la deserción | Universidad de
+                Antioquia</span
+              >
+              <span class="fecha">2023 - 2023</span>
+              <p>
+                Certificado que acredita el acompañamiento, guía y apoyo a todos
+                los jovenes estudiantes de antioquia para explicarles y
+                motivarlos a tener una vida y una carrera universitaria.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Certificado Algoritmos para Big Data</h4>
+              <span class="casa"
+                >IN2LAB research group, the Faculty of Engineering in
+                Universidad de Antioquia</span
+              >
+              <span class="fecha">2023 - 2023</span>
+              <p>
+                Certificado que acredita la adquisición de conocimientos y
+                habilidades en el diseño, análisis e implementación de
+                algoritmos optimizados para el procesamiento y análisis de
+                grandes volúmenes de datos.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>
+                Certificado Inteligencia Artificial para las Ingenierías y
+                Ciencias
+              </h4>
+              <span class="casa"
+                >IN2LAB research group, the Faculty of Engineering in
+                Universidad de Antioquia</span
+              >
+              <span class="fecha">2023 - 2024</span>
+              <p>
+                Certificado en una introducción completa y técnica a los métodos
+                y técnicas para crear modelos descriptivos y predictivos a
+                partir de datos.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Certificado CCNAv7: Introducción a Redes</h4>
+              <span class="casa">Cisco Networking Academy</span>
+              <span class="fecha">2024 - 2024</span>
+              <p>
+                Certificado en una acreditación que ha adquirido conocimientos
+                fundamentales sobre redes de computadoras, incluyendo su diseño,
+                configuración y mantenimiento.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Certificado CyberOps Associate</h4>
+              <span class="casa">Cisco Networking Academy</span>
+              <span class="fecha">2024 - 2024</span>
+              <p>
+                Certificado en una acreditación que ha adquirido conocimientos y
+                habilidades fundamentales en ciberseguridad y operaciones de
+                seguridad, con un enfoque en la detección, análisis y respuesta
+                ante amenazas en entornos empresariales.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Certificado Asistencia Administrativa</h4>
+              <span class="casa">SENA</span>
+              <span class="fecha">2017 - 2018</span>
+              <p>
+                Titulado en media tecnica de asistencia administrativa como
+                parte de proceso de graduación de la vida escolar bachillerato.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Experiencia de trabajo</h3>
+            <div class="item der">
+              <h4>College Trainee | Practica empresarial</h4>
+              <span class="casa">Tuya S.A.</span>
+              <span class="fecha">2025 - 2026</span>
+              <p>
+                - Apoyo al equipo administrativo y financiero en la optimización
+                de procesos clave como presupuesto, facturación, analítica y
+                gestión de activos, incorporando prácticas de automatización,
+                estandarización y trazabilidad para mejorar la eficiencia
+                operativa de diferentes áreas.
+              </p>
+              <p>
+                - Diseño y desarrollo de una propuesta integral para la
+                automatización del proceso de gestión del ciclo de vida de
+                activos en Tuya S.A., con el objetivo de mejorar la
+                trazabilidad, reducir tiempos operativos y unificar múltiples
+                fuentes de información.
+              </p>
+              <p>
+                - Documentación de procesos, flujos de trabajo y procedimientos
+                operativos para asegurar estandarización y continuidad.
+              </p>
+              <p>
+                - Gestión de ANS/SLA de los proyectos del área, realizando
+                seguimiento a indicadores y tiempos de respuesta.
+              </p>
+              <p>
+                - Análisis de los procesos actuales de presupuesto y facturación
+                para identificar oportunidades de mejora y proponer soluciones
+                orientadas a la automatización y eficiencia interna.
+              </p>
+              <p>
+                - Formación y uso de herramientas como ServiceNow y SAS para el
+                desarrollo de tareas automatizadas y tableros analíticos.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Administrador de Sistemas</h4>
+              <span class="casa">Universidad de Antioquia</span>
+              <span class="fecha">2024 - 2025</span>
+              <p>
+                - Experiencia en el desarrollo y mantenimiento de software,
+                apoyando la creación, prueba y depuración de aplicaciones para
+                el Laboratorio Integrado de Sistemas (LIS). Habilidades en la
+                gestión y optimización de bases de datos, ejecución de consultas
+                y generación de reportes.
+              </p>
+              <p>
+                - Brindé soporte técnico y asistencia a usuarios, orientando a
+                estudiantes y docentes en la resolución de problemas de
+                programación y uso de herramientas de desarrollo.
+              </p>
+              <p>
+                - Participé en pruebas de software y control de calidad,
+                identificando errores y optimizando el código. Además, elaboré
+                documentación técnica, manuales y guías, asegurando la correcta
+                gestión y actualización de los sistemas.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Componente de búsqueda con IA</h4>
+              <span class="casa">PECET | Grupo de Investigación</span>
+              <span class="fecha">2024 - 2025</span>
+              <p>
+                Experiencia en un proyecto con finalidad de mejorar la gestión y
+                consulta de los activos de conocimiento del grupo de
+                investigación de la Universidad de Antioquia "PECET" a través de
+                un agente inteligente. La producción científica requiere de una
+                gestión eficiente para facilitar la investigación y toma de
+                decisiones. Esta solución integra un backend robusto en FastAPI
+                y un frontend moderno en React, permitiendo subir, consultar y
+                buscar documentos usando tecnologías como Azure Blob Storage y
+                ElasticSearch, permitiendo la búsqueda inteligente, gestión y
+                visualización de activos de conocimiento del PECET.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Sistema Cotización de Viajes</h4>
+              <span class="casa">Cootraespeciales</span>
+              <span class="fecha">2024 - 2024</span>
+              <p>
+                Experiencia en un sistema web de cotización de transporte, en
+                colaboración con la empresa colombiana de autobuses
+                COOTRAESPECIALES. Diseñado para simplificar y automatizar el
+                proceso de generación de estimaciones de costos de transporte.
+                El sistema permite a los usuarios seleccionar los puntos de
+                salida y regreso, especificar el número de pasajeros y elegir
+                entre los vehículos disponibles. Calcula las cotizaciones con
+                base en precios base predefinidos y la capacidad del vehículo,
+                lo que hace que el proceso sea eficiente y fácil de usar.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Auxiliar Administrativo</h4>
+              <span class="casa">Universidad de Antioquia</span>
+              <span class="fecha">2022 - 2024</span>
+              <p>
+                - Experiencia en gestión administrativa y documental, organización
+                de bases de datos y generación de reportes técnicos y
+                administrativos. Encargado de la gestión de inventarios,
+                adquisición y mantenimiento de equipos informáticos, así como la
+                programación y control del uso de laboratorios.
+              </p>
+              <p>
+                - Brindé soporte y asistencia a estudiantes, docentes y
+                personal, gestionando solicitudes y resolviendo incidencias
+                técnicas básicas. Además, apoyé en mantenimiento preventivo y
+                actualización de software, contribuyendo al correcto
+                funcionamiento del laboratorio Integrado de Sistemas (LIS) y
+                cumplimiento de normas de seguridad.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- SECCION PORTFOLIO -->
     <section id="portfolio" class="portfolio">
-        <div class="contenido-seccion">
-            <h2>PORTFOLIO</h2>
-            <div class="galeria">
-                <div class="proyecto">
-                    <img src="img/MovieTime.png" alt="">
-                    <div class="overlay">
-                        <h3>Time To Enjoy</h3>
-                        <a href="https://timetoenjoy.vercel.app/" target="_blank">
-                            <button>
-                                Visitar <i class="fa-solid fa-eye-low-vision"></i>
-                                <span class="overlay"></span>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/LogoTorneoFC.png" alt="">
-                    <div class="overlay">
-                        <h3>Torneo FC</h3>
-                        <a href="https://campeonato-futbol-delta.vercel.app/" target="_blank">
-                            <button>
-                                Visitar <i class="fa-solid fa-eye-low-vision"></i>
-                                <span class="overlay"></span>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/LogoWWE-Database.png" alt="">
-                    <div class="overlay">
-                        <h3>WWE DataBase</h3>
-                        <a href="https://wwe-database.vercel.app/" target="_blank">
-                            <button>
-                                Visitar <i class="fa-solid fa-eye-low-vision"></i>
-                                <span class="overlay"></span>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/LogoCootraespeciales.png" alt="">
-                    <div class="overlay">
-                        <h3>Cootraespeciales | Cotizador de Viajes</h3>
-                        <a href="https://cotizador-servicios-transporte-cootraespeciales.vercel.app/" target="_blank">
-                            <button>
-                                Visitar <i class="fa-solid fa-eye-low-vision"></i>
-                                <span class="overlay"></span>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/LogoCommerce.png" alt="">
-                    <div class="overlay">
-                        <h3>E-Comerce | Plataforma de comercio electronico</h3>
-                        <a href="https://" target="_blank">
-                            <button>
-                                Visitar <i class="fa-solid fa-eye-low-vision"></i>
-                                <span class="overlay"></span>
-                            </button>
-                        </a>
-                    </div>
-                </div>
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="img/MovieTime.png" alt="" />
+            <div class="overlay">
+              <h3>Time To Enjoy</h3>
+              <a href="https://timetoenjoy.vercel.app/" target="_blank">
+                <button>
+                  Visitar <i class="fa-solid fa-eye-low-vision"></i>
+                  <span class="overlay"></span>
+                </button>
+              </a>
             </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/LogoTorneoFC.png" alt="" />
+            <div class="overlay">
+              <h3>Torneo FC</h3>
+              <a
+                href="https://campeonato-futbol-delta.vercel.app/"
+                target="_blank"
+              >
+                <button>
+                  Visitar <i class="fa-solid fa-eye-low-vision"></i>
+                  <span class="overlay"></span>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/LogoWWE-Database.png" alt="" />
+            <div class="overlay">
+              <h3>WWE DataBase</h3>
+              <a href="https://wwe-database.vercel.app/" target="_blank">
+                <button>
+                  Visitar <i class="fa-solid fa-eye-low-vision"></i>
+                  <span class="overlay"></span>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/LogoCootraespeciales.png" alt="" />
+            <div class="overlay">
+              <h3>Cootraespeciales | Sistema Cotización de Viajes</h3>
+              <a
+                href="https://cotizador-servicios-transporte-cootraespeciales.vercel.app/"
+                target="_blank"
+              >
+                <button>
+                  Visitar <i class="fa-solid fa-eye-low-vision"></i>
+                  <span class="overlay"></span>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/PecetLogo.png" alt="" />
+            <div class="overlay">
+              <h3>PECET | Componente de búsqueda con IA</h3>
+              <a href="https://github.com/Jonathand77/pecet" target="_blank">
+                <button>
+                  Visitar <i class="fa-solid fa-eye-low-vision"></i>
+                  <span class="overlay"></span>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/TuyaLogo.png" alt="" />
+            <div class="overlay">
+              <h3>Tuya S.A. | Automatización del proceso de línea de vida de activos</h3>
+              <a href="https://github.com/Jonathand77/activos-tuya" target="_blank">
+                <button>
+                  Visitar <i class="fa-solid fa-eye-low-vision"></i>
+                  <span class="overlay"></span>
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- footer -->
     <footer>
-        <a href="#inicio" class="arriba">
-            <i class="fa-solid fa-angles-up"></i>
-        </a>
-        <div class="redes">
-            <a href="https://www.facebook.com/profile.php?id=100003792250786&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/jonathandvid77?igsh=eGp6N2F4dTZnMDlu" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="in/jonathan-david-fernandez-vargas-800b04279" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        </div>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a
+          href="https://www.facebook.com/profile.php?id=100003792250786&mibextid=ZbWKwL"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/jonathandvid77?igsh=eGp6N2F4dTZnMDlu"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/jonathan-david-fernandez-vargas-800b04279/" target="_blank"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>
