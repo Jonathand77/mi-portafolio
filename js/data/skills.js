@@ -8,7 +8,7 @@ export const technicalSkills = [
 
 export const professionalSkills = [
     { nombre: "Comunicación", porcentaje: 90, icono: "fa-solid fa-comments" },
-    { nombre: "Trabajo en Equipo", porcentaje: 80, icono: "fa-solid fa-users" },
+    { nombre: "Trabajo en Equipo", porcentaje: 100, icono: "fa-solid fa-users" },
     { nombre: "Creatividad", porcentaje: 85, icono: "fa-solid fa-lightbulb" },
     { nombre: "Dedicación", porcentaje: 95, icono: "fa-solid fa-fire" },
     { nombre: "Proyect Management", porcentaje: 85, icono: "fa-solid fa-clipboard-list" },
