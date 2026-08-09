@@ -1,0 +1,151 @@
+/* SECCION I N I C I O */
+
+.inicio{
+    position: relative;
+    height: 100vh;
+    color: var(--color-texto);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.inicio::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(../img/fondo.jpg) center / cover;
+    animation: zoom-lento 22s ease-in-out infinite alternate;
+    z-index: -2;
+}
+.inicio::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(30, 35, 38, .85), rgba(30, 35, 38, 1));
+    background: linear-gradient(to top, color-mix(in srgb, var(--color-fondo-oscuro) 85%, transparent), var(--color-fondo-oscuro));
+    z-index: -1;
+}
+@keyframes zoom-lento{
+    from{ transform: scale(1); }
+    to{ transform: scale(1.12); }
+}
+
+.inicio .contenido-banner{
+    padding: 32px 24px;
+    background-color: var(--color-fondo-oscuro);
+    background: color-mix(in srgb, var(--color-fondo-oscuro) 88%, transparent);
+    backdrop-filter: blur(6px);
+    max-width: 360px;
+    margin: auto;
+    text-align: center;
+    border-radius: 32px;
+    border: 1px solid rgba(28, 182, 152, .25);
+    border: 1px solid color-mix(in srgb, var(--color-acento) 25%, transparent);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .35);
+    transition: transform .4s ease, box-shadow .4s ease;
+}
+.inicio .contenido-banner:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 28px 55px rgba(0, 0, 0, .45);
+}
+
+/* FOTO */
+.inicio .contenedor-img{
+    width: 170px;
+    height: 170px;
+    margin: 8px auto 0;
+    opacity: 0;
+    animation: aparecer-arriba .8s ease .1s both;
+}
+.inicio .contenedor-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: 6px solid var(--color-acento);
+    border-radius: 100%;
+    animation: flotar 4s ease-in-out .9s infinite;
+}
+@keyframes flotar{
+    0%, 100%{ transform: translateY(0); }
+    50%{ transform: translateY(-10px); }
+}
+
+/* TEXTO */
+.inicio .contenido-banner h1{
+    margin-top: 28px;
+    font-family: var(--fuente-titulo);
+    font-size: clamp(26px, 6vw, 42px);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, var(--color-texto), var(--color-acento));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+    animation: aparecer-arriba .8s ease .3s both;
+}
+.inicio .contenido-banner h2{
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .3px;
+    color: rgba(255, 255, 255, .8);
+    color: color-mix(in srgb, var(--color-texto) 80%, transparent);
+    opacity: 0;
+    animation: aparecer-arriba .8s ease .45s both;
+}
+.inicio .contenido-banner h2 span{
+    color: var(--color-acento);
+    font-weight: 700;
+}
+@keyframes aparecer-arriba{
+    from{ opacity: 0; transform: translateY(24px); }
+    to{ opacity: 1; transform: translateY(0); }
+}
+
+/* REDES SOCIALES */
+.inicio .contenido-banner .redes a{
+    color: var(--color-texto);
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid var(--color-texto);
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 32px 5px 0;
+    font-size: 20px;
+    opacity: 0;
+    transition: background-color .3s ease, transform .3s ease, border-color .3s ease;
+    animation: aparecer-arriba .6s ease both;
+}
+.inicio .contenido-banner .redes a:nth-child(1){ animation-delay: .6s; }
+.inicio .contenido-banner .redes a:nth-child(2){ animation-delay: .7s; }
+.inicio .contenido-banner .redes a:nth-child(3){ animation-delay: .8s; }
+.inicio .contenido-banner .redes a:hover{
+    background-color: var(--color-acento);
+    border-color: var(--color-acento);
+    transform: translateY(-4px) scale(1.08);
+}
+
+/* INDICADOR DE SCROLL */
+.inicio .scroll-indicador{
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-texto);
+    font-size: 22px;
+    text-decoration: none;
+    opacity: .75;
+    animation: rebote 2s ease-in-out infinite;
+    transition: color .3s ease, opacity .3s ease;
+}
+.inicio .scroll-indicador:hover{
+    color: var(--color-acento);
+    opacity: 1;
+}
+@keyframes rebote{
+    0%, 100%{ transform: translate(-50%, 0); }
+    50%{ transform: translate(-50%, 10px); }
+}

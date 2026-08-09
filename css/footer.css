@@ -1,0 +1,82 @@
+/* SECCIÓN FOOTER */
+
+footer{
+    background-color: var(--color-fondo-oscuro);
+    color: var(--color-texto);
+    padding: 60px 20px 30px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    border-top: 1px solid rgba(28, 182, 152, .15);
+    border-top: 1px solid color-mix(in srgb, var(--color-acento) 15%, transparent);
+}
+
+/* BOTON VOLVER ARRIBA */
+footer .arriba{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-acento);
+    color: var(--color-texto);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    font-size: 18px;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(28, 182, 152, .35);
+    box-shadow: 0 8px 20px color-mix(in srgb, var(--color-acento) 35%, transparent);
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+footer .arriba:hover{
+    transform: translateX(-50%) translateY(-6px);
+    box-shadow: 0 14px 28px rgba(28, 182, 152, .5);
+    box-shadow: 0 14px 28px color-mix(in srgb, var(--color-acento) 50%, transparent);
+}
+footer .arriba i{
+    transition: transform .4s ease;
+}
+footer .arriba:hover i{
+    transform: translateY(-3px);
+}
+
+/* REDES */
+footer .redes{
+    margin: 30px 0 20px;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+footer .redes a{
+    color: var(--color-texto);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid var(--color-texto);
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+    transition: background-color .3s ease, border-color .3s ease, transform .3s ease;
+}
+footer .redes a:hover{
+    background-color: var(--color-acento);
+    border-color: var(--color-acento);
+    transform: translateY(-4px) scale(1.08);
+}
+
+/* CREDITOS */
+footer .creditos{
+    font-size: 13px;
+    letter-spacing: .3px;
+    color: rgba(255, 255, 255, .55);
+    color: color-mix(in srgb, var(--color-texto) 55%, transparent);
+}
+footer .creditos strong{
+    color: var(--color-acento);
+    font-weight: 700;
+}

@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-acento: #1CB698;
+    --color-fondo-oscuro: #1e2326;
+    --color-fondo-claro: #252A2E;
+    --color-fondo-barra: #131517;
+    --color-texto: #fff;
+    --fuente-titulo: 'Righteous';
+    --fuente-texto: 'Work Sans';
+}

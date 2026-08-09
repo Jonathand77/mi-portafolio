@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    font-family: var(--fuente-texto);
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+a:focus-visible,
+button:focus-visible{
+    outline: 2px solid var(--color-acento);
+    outline-offset: 3px;
+}
+
+/* Título centrado reutilizable para cada sección */
+.titulo-seccion{
+    position: relative;
+    font-family: var(--fuente-titulo);
+    font-size: 44px;
+    text-align: center;
+    padding: 20px 0 32px;
+    letter-spacing: .5px;
+}
+.titulo-seccion::after{
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--color-acento);
+}
+
+/* Tarjeta glass reutilizable; --tarjeta-bg se sobreescribe según el fondo de cada sección */
+.tarjeta-glass{
+    --tarjeta-bg: var(--color-fondo-claro);
+    background: rgba(37, 42, 46, .55);
+    background: color-mix(in srgb, var(--tarjeta-bg) 55%, transparent);
+    border: 1px solid color-mix(in srgb, var(--color-acento) 12%, transparent);
+    border-radius: 20px;
+    padding: 30px;
+    transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+.tarjeta-glass:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, .3);
+    border-color: color-mix(in srgb, var(--color-acento) 40%, transparent);
+}
+
+/* Animación de aparición al hacer scroll, activada por scroll-reveal.js */
+.reveal{
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity .7s ease, transform .7s ease;
+}
+.reveal.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce){
+    *{
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

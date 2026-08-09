@@ -1,0 +1,138 @@
+/* SECCION CURRICULUM */
+
+.curriculum{
+    background-color: var(--color-fondo-oscuro);
+    color: var(--color-texto);
+    padding: 90px 20px;
+}
+.curriculum .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.curriculum .fila{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.curriculum .fila .col{
+    width: 49%;
+}
+.curriculum .fila .col h3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-family: var(--fuente-titulo);
+    margin-bottom: 28px;
+}
+.curriculum .fila .col h3 i{
+    color: var(--color-acento);
+    font-size: 20px;
+}
+.curriculum .fila .izquierda{
+    border-right: 1px solid var(--color-fondo-claro);
+    padding-right: 20px;
+}
+.curriculum .fila .derecha{
+    border-left: 1px solid var(--color-fondo-claro);
+    padding-left: 20px;
+}
+
+/* TARJETA DE CADA ITEM */
+.curriculum .fila .item{
+    padding: 24px;
+    margin-bottom: 24px;
+    background-color: var(--color-fondo-claro);
+    border: 1px solid transparent;
+    border-radius: 16px;
+    position: relative;
+    transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+.curriculum .fila .item:last-child{
+    margin-bottom: 0;
+}
+.curriculum .fila .item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, .3);
+    border-color: rgba(28, 182, 152, .35);
+    border-color: color-mix(in srgb, var(--color-acento) 35%, transparent);
+}
+.curriculum .fila .item .fecha{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    color: var(--color-acento);
+    background: rgba(28, 182, 152, .12);
+    background: color-mix(in srgb, var(--color-acento) 12%, transparent);
+    padding: 3px 12px;
+    border-radius: 999px;
+    margin-bottom: 12px;
+}
+.curriculum .fila .item h4{
+    font-size: 18px;
+    margin-bottom: 6px;
+    line-height: 1.35;
+}
+.curriculum .fila .item .casa{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, .65);
+    color: color-mix(in srgb, var(--color-texto) 65%, transparent);
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.curriculum .fila .item .casa i{
+    color: var(--color-acento);
+}
+.curriculum .fila .item p{
+    font-size: 14.5px;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, .8);
+    color: color-mix(in srgb, var(--color-texto) 80%, transparent);
+}
+
+/* CONECTORES HACIA EL DIVISOR CENTRAL */
+.curriculum .fila .item .conectori,
+.curriculum .fila .item .conectord{
+    height: 2px;
+    background-color: var(--color-acento);
+    width: 20px;
+    position: absolute;
+    top: 32px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectori{ right: -20px; }
+.curriculum .fila .item .conectord{ left: -20px; }
+.curriculum .fila .item .circuloi,
+.curriculum .fila .item .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--color-acento);
+    box-shadow: 0 0 0 4px rgba(28, 182, 152, .18);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-acento) 18%, transparent);
+    position: relative;
+    top: -4px;
+}
+.curriculum .fila .item .circuloi{ float: right; right: -4px; }
+.curriculum .fila .item .circulod{ float: left; left: -4px; }
+
+@media (max-width: 900px){
+    .curriculum .fila{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .curriculum .fila .col{
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
+    .curriculum .fila .item .conectori,
+    .curriculum .fila .item .conectord{
+        display: none;
+    }
+}
